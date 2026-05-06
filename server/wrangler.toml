@@ -1,0 +1,4 @@
+name = "agenticu-server"
+main = "dist/worker.js"
+compatibility_date = "2024-01-01"
+account_id = "cbfe190e5519de4383d09d38abc0f59e"

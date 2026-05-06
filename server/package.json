@@ -1,0 +1,29 @@
+{
+  "name": "agenticu-server",
+  "version": "2.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build:worker": "esbuild worker.ts --bundle --outfile=dist/worker.js --platform=node --format=esm --target=node20"
+  },
+  "dependencies": {
+    "@gitbeaker/rest": "^40.0.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.0",
+    "@types/ws": "^8.5.10",
+    "esbuild": "^0.24.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^4.88.0"
+  }
+}
